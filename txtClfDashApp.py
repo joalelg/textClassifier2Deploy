@@ -21,7 +21,7 @@ pd.DataFrame({'xa':np.random.rand(10), 'ya':np.random.rand(10)}).plot.scatter(x=
 plotly_fig = mpl_to_plotly(mpl_fig)
 # Boostrap CSS.
 app.css.append_css({'external_url': 'https://codepen.io/amyoshino/pen/jzXypZ.css'})  # noqa: E501
-df = pd.read_csv('../data/display_df.csv')
+df = pd.read_csv('input/display_df.csv')
 class_names =  ["athletics", "cricket", "football", "rugby", "tennis"]
 print(df.tail(1).T)
 print(df.Category.unique())
